@@ -93,11 +93,18 @@ function checkCookie() {
       
       window.onlad=checkCookie();
 
+      function delCookie()
+{
+  document.cookie = "username=; max-age=0; path=/";
+}
       
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiV2ZbFIYuD3N4hzGLstSn2e4ZG5A7QlU&callback=initMap"
     async defer></script> 
     
+    <div>
+      <input type="button" value="クッキー削除" onclick="delCookie()">
+    </div>
     
   </body>
 </html>
